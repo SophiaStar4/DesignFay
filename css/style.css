@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Martel+Sans&family=Montserrat+Alternates:wght@400;500;700&display=swap');
+
+/* Обнуление ------------------------------------------------------------------------------- */
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body {
+    height: 100%;
+    background-color: #FFFCE7;
+    line-height: 1;
+    font-size: 15px;
+    color: #192711;
+    font-weight: 400;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+._container {
+    max-width: 1300px;
+    height: 100%;
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.img_container img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Шапка ------------------------------------------------------------------------------- */
+
+.wrapper > header {
+    /* border: 2px solid red; */
+
+    width: 100%;
+    height: 100px;
+    background-color: #FFFCE7A1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.header_inner {
+    /* border: 2px solid green; */
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Логотип ------------------------------------------------------------------------------- */
+
+.logotype {
+    /* border: 2px solid blue; */
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 100%;
+}
+
+.brend_name {
+    font-size: 40px;
+    font-family: 'Italiana', sans;
+}
+
+/* Меню ------------------------------------------------------------------------------- */
+
+nav {
+    /* border: 2px solid blue; */
+
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+nav > ul {
+    display: flex;
+}
+
+.menu li:not(:last-child) {
+    margin: 0 16px 0 0;
+}
+
+header a:not(.brend_name > a):hover {
+    text-decoration: underline;
+}
+
+.break {
+    margin: 0 8px;
+}
+
+/* Титульник ------------------------------------------------------------------------------- */
+
+.cover {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Слайдер ------------------------------------------------------------------------------- */
+
+.bx-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+    box-shadow: none;
+    border: none;
+}
+
+/* Контент титульника ------------------------------------------------------------------------------- */
+
+.section-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+
+.title {
+    width: 75%;
+    background-color: #FFFCE7A1;
+    padding: 80px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1 > span {
+    font-weight: 700;
+}
+
+.title > p {
+    margin-top: 10px;
+}
+
+/* О компании ------------------------------------------------------------------------------- */
+
+.about {
+    height: 80vh;
+}
+
+/* Подвал ------------------------------------------------------------------------------- */
+
+footer {
+    height: 20vh;
+    background-color: #192711;
+    color: #FFFCE7;
+}
